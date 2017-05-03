@@ -1,0 +1,79 @@
+<!-- Remember to add samp.dll and bass.dll :-) !-->
+
+<!--
+Avalable runmodes:
+	0 = RCON mode,
+	1 = Bare mode (doesn't spawn),
+	2 = Still mode (stays still at spawn position),
+	3 = Normal mode (stays still at a position),
+	4 = Follows a player,
+	5 = Follows a player with a vehicle,
+	6 = Mode for playing routes,
+-->
+
+<RakSAMPClient console="0" runmode="1" autorun="0" find="1" select_classid="1"
+			   print_timestamps="0" chatcolor_rgb="0 0 160" clientmsg_rgb="0 160 0"
+			   followplayer="]ZH[AlexWill" followplayerwithvehicleid="243" followXOffset="3.0" followYOffset="0.0" followZOffset="0.0"
+			   imitatechat="=AlexDrift=">
+
+	<!-- The first one is the one it will connect to -->
+	<server nickname="Pizd" password="">192.168.1.3:7777</server>
+
+
+	<!-- If in normal mode, stay still at... -->
+	<normal_pos position="-1953.48, 262.31, 41.12" rotation="0.0" />
+
+	<!-- If in playing routes mode, go to a position to get near by vehicle ids. -->
+	<play_pos position="-1953.48, 262.31, 41.12" rotation="0.0" />
+
+	<!--
+	Available commands:
+		!exit or !quit: exits client.
+		!reconnect: reconnects the server.
+		!reload: reloads settings.
+		!stats: shows raknet statistics.
+		!players: shows list of players.
+		!goto: go to players position.
+		!imitate: change imitate name.
+		!vlist: shows list of vehicles.
+		!vdeath: send vehicle death notification.
+		!selveh: selects vehicle for playback.
+		!rtlist: shows list of routes.
+		!loadrt: loads a route.
+		!playrt: plays the selected route.
+		!stoprt: stops the selected route.
+		!menusel: selects an item from the GTA menu.
+                !kill: fake kill.
+                !lag: server fucker.
+                !lagflood: join flood + lags.
+                !ccflood: join flood.
+                !flood: flooder.
+                !rflood: rcon flood BooooM.
+                !sflood: spawn flood.
+                !recflood: spawn reqest.
+                !dflood: dialod crash server flood.
+                !deaflood: player deadhs.
+                !pflood: pickup flood.
+                !vflood: flood Enter vehicle.
+                !dea2flood: fake kill тем оружием которое в руках.
+                !eflood: flood Exit vehicle.
+                !spam: flood/spam.
+                !rcflood: rcon flood typo.
+                !reg: flood registracion.
+                !clientping: player pinger:78767678877
+                !npclagger: player lagger ping:65768878877
+                !ddos: ddos atack
+                !packet: packet modifield
+                !fnpc: fake NPC LAGGER
+                !crflood: Nick COLORER
+	-->
+
+	<!-- These get called when we successfully connected to a server. -->
+        <autorun>!ddos</autorun>
+        <autorun>!ddos</autorun>
+	
+	
+	<!-- Finds text from the chatbox and says something. -->
+	<!-- <find text="PM from" say="[FC]AlexDrift" bk_color="255 255 255" text_color="255 0 0" /> -->
+
+</RakSAMPClient>
